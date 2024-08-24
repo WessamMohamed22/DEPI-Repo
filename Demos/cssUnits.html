@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: beige;
+            color: purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            gap: 20px;
+            text-align: center;
+        }
+        .box {
+            padding: 10px;
+            border: 2px solid purple;
+            text-align: center;
+        }
+        /* Absolute Units */
+        .px {
+            width: 100px;
+            height: 100px;
+        }
+        .cm {
+            width: 2cm;
+            height: 2cm;
+        }
+        .in {
+            width: 1in;
+            height: 1in;
+        }
+        .pt {
+            width: 72pt;
+            height: 72pt;
+        }
+        .pc {
+            width: 6pc;
+            height: 6pc;
+        }
+        /* Relative Units */
+        .em {
+            width: 10em;
+            height: 5em;
+        }
+        .rem {
+            width: 10rem;
+            height: 5rem;
+        }
+        .vw {
+            width: 10vw;
+            height: 10vh;
+        }
+        .vh {
+            width: 10vh;
+            height: 10vh;
+        }
+        .percent {
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box px">Pixels (px)</div>
+        <div class="box cm">Centimeters (cm)</div>
+        <div class="box in">Inches (in)</div>
+        <div class="box pt">Points (pt)</div>
+        <div class="box pc">Picas (pc)</div>
+        <div class="box em">Em (em)</div>
+        <div class="box rem">Rem (rem)</div>
+        <div class="box vw">Viewport Width (vw)</div>
+        <div class="box vh">Viewport Height (vh)</div>
+        <div class="box percent">Percentage (%)</div>
+    </div>
+</body>
+</html>

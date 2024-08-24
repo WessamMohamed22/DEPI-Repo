@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min-width vs Max-width vs Width & Min-height vs Max-height vs Height Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: beige;
+            color: purple;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #f0f0f0; /* Light gray */
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 80%; /* Center the container */
+            margin: 0 auto;
+            border: 1px solid #9a9797;
+        }
+
+        .box {
+            background-color: #e0ebf7; /* Light blue */
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+            width: 80%; /* Center the boxes within the container */
+            margin: 0 auto;
+            
+        }
+
+        /* Box with only width set */
+        .width-box {
+            width: 200px;
+            background-color: #da9dd5; /* Light pink */
+        }
+
+        /* Box with min-width and max-width */
+        .min-max-width-box {
+            min-width: 150px;
+            max-width: 300px;
+            width: 50%; /* This will be the base width, constrained by min and max */
+            background-color: #7cb07c; /* Light green */
+        }
+
+        /* Box with only height set */
+        .height-box {
+            height: 150px;
+            background-color: #886189; /* Light blue */
+        }
+
+        /* Box with min-height and max-height */
+        .min-max-height-box {
+            min-height: 100px;
+            max-height: 200px;
+            height: 50%; /* This will be the base height, constrained by min and max */
+            background-color: #a98640; /* Light orange */
+        }
+
+        /* Container to demonstrate height properties */
+        .height-container {
+            height: 450px;
+            border: 1px solid #9a9797;
+            width: 80%; /* Center the container */
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1> Width &  Height Demo</h1>
+
+    <h2>Width, Min-width, and Max-width</h2>
+    <div class="container">
+        <div class="box width-box">
+            Width: 200px
+        </div>
+
+        <div class="box min-max-width-box">
+            Min-width: 150px, Max-width: 300px, Width: 50%
+        </div>
+        </div>
+
+    <h2>Height, Min-height, and Max-height</h2>
+    <div class="container height-container">
+        <div class="box height-box">
+            Height: 150px
+        </div>
+
+        <div class="box min-max-height-box">
+            Min-height: 100px, Max-height: 200px, Height: 50%
+        </div>
+        </div>
+</body>
+</html>

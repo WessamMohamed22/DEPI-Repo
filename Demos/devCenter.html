@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering a Div - 6 Ways</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            background-color: beige;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: purple;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .method {
+            border: 2px solid purple;
+            padding: 20px;
+            width: 200px;
+        }
+        /* Method 1: Flexbox */
+        .flexbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: #e0e0e0;
+        }
+        /* Method 2: Grid */
+        .grid {
+            display: grid;
+            place-items: center;
+            height: 100px;
+            background-color: #e0e0e0;
+        }
+        /* Method 3: Absolute positioning */
+        .absolute {
+            position: relative;
+            height: 100px;
+            background-color: #e0e0e0;
+        }
+        .absolute div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* Method 4: Margin auto */
+        .margin-auto {
+            height: 100px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+        }
+        .margin-auto div {
+            margin: 0 auto;
+        }
+        /* Method 5: Text align and vertical align */
+        .text-vertical-align {
+            height: 100px;
+            line-height: 100px;
+            background-color: #e0e0e0;
+        }
+        .text-vertical-align div {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }
+        /* Method 6: Flexbox with a wrapper */
+        .flexbox-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: #e0e0e0;
+        }
+        .flexbox-wrapper div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="method flexbox">
+            <div>Flexbox</div>
+        </div>
+        <div class="method grid">
+            <div>Grid</div>
+        </div>
+        <div class="method absolute">
+            <div>Absolute</div>
+        </div>
+        <div class="method margin-auto">
+            <div>Margin Auto</div>
+        </div>
+        <div class="method text-vertical-align">
+            <div>Text & Vertical Align</div>
+        </div>
+        <div class="method flexbox-wrapper">
+            <div>Flexbox Wrapper</div>
+        </div>
+    </div>
+</body>
+</html>

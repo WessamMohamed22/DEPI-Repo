@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margin Collapse Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: beige;
+            color: purple;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .example {
+            -webkit-transform: rotate(30deg);
+            /* Chrome, Safari */
+            -moz-transform: rotate(30deg);
+            /* Firefox */
+            -ms-transform: rotate(30deg);
+            /* Internet Explorer */
+            -o-transform: rotate(30deg);
+            /* Opera */
+            transform: rotate(30deg);
+            /* Standard */
+        }
+
+        .background {
+            background: -webkit-linear-gradient(top, #fff, #000);
+            /* Chrome, Safari */
+            background: -moz-linear-gradient(top, #fff, #000);
+            /* Firefox */
+            background: -o-linear-gradient(top, #fff, #000);
+            /* Opera */
+            background: linear-gradient(to bottom, #fff, #000);
+            /* Standard */
+        }
+
+        .background {
+            background: -webkit-linear-gradient(top, #fff, #000);
+            /* Chrome, Safari */
+            background: -moz-linear-gradient(top, #fff, #000);
+            /* Firefox */
+            background: -o-linear-gradient(top, #fff, #000);
+            /* Opera */
+            background: linear-gradient(to bottom, #fff, #000);
+            /* Standard */
+        }
+        .box {
+            width: 200px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid purple;
+            background-color: white;
+        }
+        .box-1 {
+            margin-bottom: 30px;
+        }
+        .box-2 {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Margin Collapse Demo</h1>
+    <div class="box box-1">Box 1</div>
+    <div class="box box-2">Box 2</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

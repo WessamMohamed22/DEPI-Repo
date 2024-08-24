@@ -1,0 +1,477 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .dashboard {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      background-color: #4b0082;
+      color: white;
+      padding: 20px;
+      width: 250px;
+      min-width: 200px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .sidebar nav ul {
+      list-style: none;
+    }
+
+    .sidebar nav ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .sidebar nav ul li a:hover {
+      color: #eab5e9;
+    }
+
+    .content {
+      flex-grow: 1;
+      background-color: white;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #663399;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .user-info img {
+        width: 40px;
+        height: 40px;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+
+    .widgets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .widget {
+      background-color: #eeeeff;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+      flex: 1 1 calc(25% - 20px);
+      max-width: calc(25% - 20px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .widget h3 {
+      margin-bottom: 10px;
+      color: #4b0082;
+    }
+
+    @media (max-width: 768px) {
+      .widgets {
+        flex-direction: column;
+      }
+
+      .widget {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .sidebar {
+        display: none;
+      }
+
+      .content {
+        padding: 10px;
+      }
+
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="sidebar">
+      <h2>Dashboard</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Messages</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="content">
+      <header>
+        <h1>Welcome to Your Dashboard</h1>
+        <div class="user-info">
+          <p>Hello, Wessam Mohamed!</p>
+          <img src="wessam.png" alt="User Avatar">
+        </div>
+      </header>
+
+      <div class="widgets">
+        <div class="widget">
+          <h3>Sales Overview</h3>
+          <p>Total Sales: $12,340</p>
+          <p>New Orders: 45</p>
+        </div>
+        <div class="widget">
+          <h3>Analytics</h3>
+          <p>Website Visitors: 12,050</p>
+          <p>Bounce Rate: 20%</p>
+        </div>
+        <div class="widget">
+          <h3>Messages</h3>
+          <p>You have 3 new messages</p>
+        </div>
+        <div class="widget">
+          <h3>Profile Stats</h3>
+          <p>Followers: 1,200</p>
+          <p>Following: 150</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
+ -->
+
+
+
+
+
+
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Accessories Dashboard</title>
+   <style>
+     * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+ 
+     body {
+       font-family: Arial, sans-serif;
+       background-color: #f4f4f4;
+     }
+ 
+     .dashboard {
+       display: flex;
+       min-height: 100vh;
+     }
+ 
+     .sidebar {
+       background-color: #4b0082;
+       color: white;
+       padding: 20px;
+       width: 250px;
+       min-width: 200px;
+       position: relative;
+       transition: width 0.3s ease;
+     }
+ 
+     .sidebar:hover {
+       width: 300px;
+     }
+ 
+     .sidebar h2 {
+       text-align: center;
+       margin-bottom: 20px;
+       font-size: 24px;
+     }
+ 
+     .sidebar nav ul {
+       list-style: none;
+       text-align: center;
+     }
+ 
+     .sidebar nav ul li {
+       margin: 15px 0;
+     }
+ 
+     .sidebar nav ul li a {
+       color: white;
+       text-decoration: none;
+       font-size: 18px;
+     }
+ 
+     .sidebar nav ul li a:hover {
+       color: #eab5e9;
+     }
+ 
+     .content {
+       flex-grow: 1;
+       background-color: white;
+       padding: 20px;
+     }
+ 
+     header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       background-color: #663399;
+       padding: 20px;
+       border-radius: 10px;
+       color: white;
+     }
+ 
+     .user-info {
+       display: flex;
+       align-items: center;
+       cursor: pointer;
+     }
+ 
+     .user-info img {
+       width: 40px;
+       height: 40px;
+       border-radius: 50%;
+       margin-left: 10px;
+     }
+ 
+     .hidden {
+       display: none;
+     }
+ 
+     .widgets, .accessories, .best-sellers, .new-arrivals {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       margin-top: 20px;
+     }
+ 
+     .widget, .accessory, .best-seller, .new-arrival {
+       background-color: #eeeeff;
+       border-radius: 10px;
+       padding: 20px;
+       margin: 10px;
+       flex: 1 1 calc(33% - 20px);
+       max-width: calc(33% - 20px);
+       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+       text-align: center;
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
+     }
+ 
+     .widget:hover, .accessory:hover, .best-seller:hover, .new-arrival:hover {
+       transform: translateY(-5px);
+       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+     }
+ 
+     .widget h3, .accessory h3, .best-seller h3, .new-arrival h3 {
+       margin-bottom: 10px;
+       color: #4b0082;
+     }
+ 
+     .accessory img, .best-seller img, .new-arrival img {
+       width: 100%;
+       height: 200px;
+       object-fit: cover;
+       border-radius: 10px;
+       margin-bottom: 10px;
+     }
+ 
+     .price {
+       font-weight: bold;
+       color: #a06fac;
+       margin-bottom: 10px;
+     }
+ 
+     /* Responsive Design */
+     @media (max-width: 768px) {
+       .widgets, .accessories, .best-sellers, .new-arrivals {
+         flex-direction: column;
+       }
+ 
+       .widget, .accessory, .best-seller, .new-arrival {
+         max-width: 100%;
+       }
+     }
+ 
+     @media (max-width: 500px) {
+       .sidebar {
+         display: none;
+       }
+ 
+       .content {
+         padding: 10px;
+       }
+ 
+       header {
+         flex-direction: column;
+         text-align: center;
+       }
+     }
+   </style>
+ </head>
+ <body>
+   <div class="dashboard">
+     <div class="sidebar">
+       <h2>Accessories Dashboard</h2>
+       <nav>
+         <ul>
+           <li><a href="#">Overview</a></li>
+           <li><a href="#">Orders</a></li>
+           <li><a href="#">Inventory</a></li>
+           <li><a href="#">Customers</a></li>
+           <li><a href="#">Settings</a></li>
+         </ul>
+       </nav>
+     </div>
+     
+     <div class="content">
+       <header>
+         <h1>Welcome to Your Dashboard</h1>
+         <div class="user-info" onclick="toggleUserInfo()">
+           <p id="user-p">Hello, Wessam Mohamed!</p>
+           <img src="wessam.png" alt="User Avatar">
+         </div>
+       </header>
+ 
+       <div class="widgets">
+         <div class="widget">
+           <h3>Total Sales</h3>
+           <p>$12,340</p>
+           <p>New Orders: 45</p>
+         </div>
+         <div class="widget">
+           <h3>Inventory Status</h3>
+           <p>Total Items: 250</p>
+           <p>Low Stock: 10 items</p>
+         </div>
+         <div class="widget">
+           <h3>Best Sellers</h3>
+           <p>Top Products: 3</p>
+         </div>
+       </div>
+ 
+       <!-- Accessories Section -->
+       <h2>Accessories</h2>
+       <div class="accessories">
+         <div class="accessory">
+           <img src="assest/3.jpeg" alt="Accessory 1">
+           <h3>Gold Necklace</h3>
+           <p class="price">$120</p>
+           <p>Elegant gold necklace perfect for special occasions.</p>
+         </div>
+         <div class="accessory">
+           <img src="assest/a4.jpeg" alt="Accessory 2">
+           <h3>Leather Bracelet</h3>
+           <p class="price">$35</p>
+           <p>Stylish leather bracelet, ideal for casual outfits.</p>
+         </div>
+         <div class="accessory">
+           <img src="assest/Mina Earrings -- Mother of Pearl.jpeg" alt="Accessory 3">
+           <h3>Silver Earrings</h3>
+           <p class="price">$45</p>
+           <p>Charming silver earrings with a modern design.</p>
+         </div>
+       </div>
+ 
+       <!-- Best Sellers Section -->
+       <h2>Best Sellers</h2>
+       <div class="best-sellers">
+         <div class="best-seller">
+           <img src="assest/Brava Halo Engagement Ring in Platinum (Cushion).jpeg" alt="Best Seller 1">
+           <h3>Diamond Ring</h3>
+           <p class="price">$900</p>
+           <p>Top-selling diamond ring with excellent craftsmanship.</p>
+         </div>
+         <div class="best-seller">
+           <img src="assest/d4.jpeg" alt="Best Seller 2">
+           <h3>Gold Watch</h3>
+           <p class="price">$700</p>
+           <p>Luxury gold watch, perfect for formal occasions.</p>
+         </div>
+         <div class="best-seller">
+           <img src="assest/3.jpeg" alt="Best Seller 3">
+           <h3>Pearl Necklace</h3>
+           <p class="price">$150</p>
+           <p>Elegant pearl necklace, timeless and sophisticated.</p>
+         </div>
+       </div>
+ 
+       <!-- New Arrivals Section -->
+       <h2>New Arrivals</h2>
+       <div class="new-arrivals">
+         <div class="new-arrival">
+           <img src="assest/a2.jpeg" alt="New Arrival 1">
+           <h3>Gemstone Bracelet</h3>
+           <p class="price">$80</p>
+           <p>Beautiful bracelet with multi-colored gemstones.</p>
+         </div>
+         <div class="new-arrival">
+           <img src="assest/Mina Earrings -- Mother of Pearl.jpeg" alt="New Arrival 2">
+           <h3>Stud Earrings</h3>
+           <p class="price">$25</p>
+           <p>Simple and stylish stud earrings for everyday wear.</p>
+         </div>
+         <div class="new-arrival">
+           <img src="assest/3.jpeg" alt="New Arrival 3">
+           <h3>Beaded Necklace</h3>
+           <p class="price">$50</p>
+           <p>Unique beaded necklace with an artistic flair.</p>
+         </div>
+       </div>
+       </div>
+     </div>
+   </div>
+ 
+   <script>
+     function toggleUserInfo() {
+       const userInfo = document.getElementById('user-p');
+       userInfo.classList.toggle('hidden');
+     }
+   </script>
+ </body>
+ </html>
+ 
+ 

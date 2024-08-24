@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pointer Events and Caret Color Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: beige; /* Changed background color */
+            padding: 20px;
+        }
+
+        .container {
+            margin-bottom: 30px;
+            width: 80%; /* Center the container */
+            margin: 0 auto;
+        }
+
+        /* Pointer Events */
+        .pointer-box {
+            background-color: rgb(142, 68, 142);
+            padding: 20px;
+            border: 2px solid #c829e8;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .pointer-none {
+            pointer-events: none;
+            background-color: #ccc;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Caret Color */
+        .input-box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 80%; /* Center the input box */
+            margin: 0 auto;
+        }
+
+        .input-box input {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #999;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        .caret-red {
+            caret-color: red;
+        }
+
+        .caret-blue {
+            caret-color: blue;
+        }
+
+        .caret-green {
+            caret-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pointer Events and Caret Color Demo</h1>
+
+    <div class="container">
+        <h2>Pointer Events</h2>
+        <div class="pointer-box" onclick="showMessage('Box 1 clicked!')">Clickable Box 1</div>
+        <div class="pointer-box pointer-none" onclick="showMessage('Box 2 clicked!')">Non-Clickable Box 2 (pointer-events: none)</div>
+        <div class="pointer-box" onclick="showMessage('Box 3 clicked!')">Clickable Box 3</div>
+        <div class="message" id="message"></div>
+    </div>
+
+    <div class="container">
+        <h2>Caret Color</h2>
+        <div class="input-box">
+            <label for="input1">Red Caret:</label>
+            <input id="input1" type="text" class="caret-red" placeholder="Type here...">
+            <label for="input2">Blue Caret:</label>
+            <input id="input2" type="text" class="caret-blue" placeholder="Type here...">
+            <label for="input3">Green Caret:</label>
+            <input id="input3" type="text" class="caret-green" placeholder="Type here...">
+        </div>
+    </div>
+
+    <script>
+        function showMessage(message) {
+            document.getElementById('message').textContent = message;
+        }
+    </script>
+</body>
+</html>

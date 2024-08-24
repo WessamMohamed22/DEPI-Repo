@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inheritance Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: purple;
+            background-color: beige;
+            padding: 20px;
+        }
+        .parent {
+            font-size: 20px;
+            color: darkblue;
+            padding: 20px;
+            border: 2px solid purple;
+        }
+        .child {
+            padding: 10px;
+            border: 1px solid darkblue;
+        }
+        .child .grandchild {
+            font-weight: bold;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Inheritance Demo</h1>
+    <div class="parent">
+        Parent Element
+        <div class="child">
+            Child Element
+            <div class="grandchild">
+                Grandchild Element
+            </div>
+        </div>
+    </div>
+    <p>This paragraph is directly inside the body and inherits its styles.</p>
+</body>
+</html>

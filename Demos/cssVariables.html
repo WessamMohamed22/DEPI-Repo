@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Demo</title>
+    <style>
+        /* Global variables defined in :root */
+        :root {
+            --primary-color: purple;
+            --secondary-color: beige;
+            --global-font-size: 20px;
+        }
+
+        body {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            font-size: var(--global-font-size);
+            padding: 20px;
+        }
+
+        /* Local variables within .container */
+        .container {
+            --container-bg: var(--primary-color);
+            --container-color: var(--secondary-color);
+            --local-font-size: 25px;
+
+            background-color: var(--container-bg);
+            color: var(--container-color);
+            padding: 20px;
+            margin-top: 20px;
+            font-size: var(--local-font-size);
+        }
+
+        /* Nested element inheriting local variables */
+        .container .nested {
+            background-color: var(--container-color);
+            color: var(--container-bg);
+            padding: 10px;
+            font-size: var(--local-font-size);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Global vs Local CSS Variables</h1>
+    <p>This text uses global CSS variables for color and font size.</p>
+
+    <div class="container">
+        <p>This is a container that uses local CSS variables for background, text color, and font size.</p>
+        <div class="nested">
+            <p>This is a nested element inside the container, inheriting the local variables.</p>
+        </div>
+    </div>
+
+</body>
+</html>
